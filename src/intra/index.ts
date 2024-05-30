@@ -46,28 +46,6 @@ class IntraRequest {
             return err;
         }
     }
-
-    async put(endpoint, data) {
-        try {
-            const response = await axios.put(this.url + endpoint, data, {
-                headers: { Authorization: await this.Authorization() },
-            });
-            return response.data;
-        } catch (err) {
-            return err;
-        }
-    }
-
-    async delete(endpoint, data) {
-        try {
-            const response = await axios.delete(this.url + endpoint, {
-                headers: { Authorization: await this.Authorization() },
-            });
-            return response.data;
-        } catch (err) {
-            return err;
-        }
-    }
 }
 
 export default IntraRequest;
