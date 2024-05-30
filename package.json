@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "devDependencies": {
+    "@types/node": "^20.12.13",
     "tsx": "^4.9.3",
     "typescript": "^5.4.5"
   },
